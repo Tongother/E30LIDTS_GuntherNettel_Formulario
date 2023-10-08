@@ -1,0 +1,16 @@
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\bin\Debug\net6.0-windows\Formulario_validacion.exe
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\bin\Debug\net6.0-windows\Formulario_validacion.deps.json
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\bin\Debug\net6.0-windows\Formulario_validacion.runtimeconfig.json
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\bin\Debug\net6.0-windows\Formulario_validacion.dll
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\bin\Debug\net6.0-windows\Formulario_validacion.pdb
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.Form1.resources
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.csproj.GenerateResource.cache
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.AssemblyInfoInputs.cache
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.AssemblyInfo.cs
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.csproj.CoreCompileInputs.cache
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.dll
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\refint\Formulario_validacion.dll
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.pdb
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\Formulario_validacion.genruntimeconfig.cache
+C:\Users\nette\source\repos\Formulario_validacion\Formulario_validacion\obj\Debug\net6.0-windows\ref\Formulario_validacion.dll
