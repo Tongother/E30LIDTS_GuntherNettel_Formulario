@@ -28,43 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bGuardar = new System.Windows.Forms.Button();
+            this.bCancelar = new System.Windows.Forms.Button();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.tbApellidos = new System.Windows.Forms.MaskedTextBox();
-            this.tbEdad = new System.Windows.Forms.TextBox();
-            this.tbEstatura = new System.Windows.Forms.TextBox();
             this.tbTelefono = new System.Windows.Forms.TextBox();
+            this.tbEstatura = new System.Windows.Forms.TextBox();
+            this.tbEdad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbHombre = new System.Windows.Forms.RadioButton();
             this.rbMujer = new System.Windows.Forms.RadioButton();
+            this.rbHombre = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // bGuardar
             // 
-            this.button1.Location = new System.Drawing.Point(30, 256);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 70);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bGuardar.Location = new System.Drawing.Point(30, 256);
+            this.bGuardar.Name = "bGuardar";
+            this.bGuardar.Size = new System.Drawing.Size(154, 70);
+            this.bGuardar.TabIndex = 0;
+            this.bGuardar.Text = "Guardar";
+            this.bGuardar.UseVisualStyleBackColor = true;
+            this.bGuardar.Click += new System.EventHandler(this.bGuardar_Click);
             // 
-            // button2
+            // bCancelar
             // 
-            this.button2.Location = new System.Drawing.Point(30, 357);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(154, 64);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.bCancelar.Location = new System.Drawing.Point(30, 357);
+            this.bCancelar.Name = "bCancelar";
+            this.bCancelar.Size = new System.Drawing.Size(154, 64);
+            this.bCancelar.TabIndex = 1;
+            this.bCancelar.Text = "Cancelar";
+            this.bCancelar.UseVisualStyleBackColor = true;
+            this.bCancelar.Click += new System.EventHandler(this.bCancelar_Click);
             // 
             // tbNombre
             // 
@@ -72,6 +72,7 @@
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(109, 20);
             this.tbNombre.TabIndex = 2;
+            this.tbNombre.TextChanged += new System.EventHandler(this.ValidarNombre);
             // 
             // tbApellidos
             // 
@@ -79,13 +80,15 @@
             this.tbApellidos.Name = "tbApellidos";
             this.tbApellidos.Size = new System.Drawing.Size(109, 20);
             this.tbApellidos.TabIndex = 3;
+            this.tbApellidos.TextChanged += new System.EventHandler(this.ValidarApellidos);
             // 
-            // tbEdad
+            // tbTelefono
             // 
-            this.tbEdad.Location = new System.Drawing.Point(75, 98);
-            this.tbEdad.Name = "tbEdad";
-            this.tbEdad.Size = new System.Drawing.Size(109, 20);
-            this.tbEdad.TabIndex = 4;
+            this.tbTelefono.Location = new System.Drawing.Point(75, 98);
+            this.tbTelefono.Name = "tbTelefono";
+            this.tbTelefono.Size = new System.Drawing.Size(109, 20);
+            this.tbTelefono.TabIndex = 4;
+            this.tbTelefono.TextChanged += new System.EventHandler(this.ValidarTelefono);
             // 
             // tbEstatura
             // 
@@ -93,13 +96,15 @@
             this.tbEstatura.Name = "tbEstatura";
             this.tbEstatura.Size = new System.Drawing.Size(109, 20);
             this.tbEstatura.TabIndex = 5;
+            this.tbEstatura.TextChanged += new System.EventHandler(this.ValidarEstatura);
             // 
-            // tbTelefono
+            // tbEdad
             // 
-            this.tbTelefono.Location = new System.Drawing.Point(75, 150);
-            this.tbTelefono.Name = "tbTelefono";
-            this.tbTelefono.Size = new System.Drawing.Size(109, 20);
-            this.tbTelefono.TabIndex = 6;
+            this.tbEdad.Location = new System.Drawing.Point(75, 150);
+            this.tbEdad.Name = "tbEdad";
+            this.tbEdad.Size = new System.Drawing.Size(109, 20);
+            this.tbEdad.TabIndex = 6;
+            this.tbEdad.TextChanged += new System.EventHandler(this.ValidarEdad);
             // 
             // label1
             // 
@@ -157,17 +162,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Género";
             // 
-            // rbHombre
-            // 
-            this.rbHombre.AutoSize = true;
-            this.rbHombre.Location = new System.Drawing.Point(18, 19);
-            this.rbHombre.Name = "rbHombre";
-            this.rbHombre.Size = new System.Drawing.Size(62, 17);
-            this.rbHombre.TabIndex = 13;
-            this.rbHombre.TabStop = true;
-            this.rbHombre.Text = "Hombre";
-            this.rbHombre.UseVisualStyleBackColor = true;
-            // 
             // rbMujer
             // 
             this.rbMujer.AutoSize = true;
@@ -178,6 +172,17 @@
             this.rbMujer.TabStop = true;
             this.rbMujer.Text = "Mujer";
             this.rbMujer.UseVisualStyleBackColor = true;
+            // 
+            // rbHombre
+            // 
+            this.rbHombre.AutoSize = true;
+            this.rbHombre.Location = new System.Drawing.Point(18, 19);
+            this.rbHombre.Name = "rbHombre";
+            this.rbHombre.Size = new System.Drawing.Size(62, 17);
+            this.rbHombre.TabIndex = 13;
+            this.rbHombre.TabStop = true;
+            this.rbHombre.Text = "Hombre";
+            this.rbHombre.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -190,16 +195,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbTelefono);
-            this.Controls.Add(this.tbEstatura);
             this.Controls.Add(this.tbEdad);
+            this.Controls.Add(this.tbEstatura);
+            this.Controls.Add(this.tbTelefono);
             this.Controls.Add(this.tbApellidos);
             this.Controls.Add(this.tbNombre);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bCancelar);
+            this.Controls.Add(this.bGuardar);
             this.Name = "Form1";
             this.Text = "Formulario";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -209,13 +213,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bGuardar;
+        private System.Windows.Forms.Button bCancelar;
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.MaskedTextBox tbApellidos;
-        private System.Windows.Forms.TextBox tbEdad;
-        private System.Windows.Forms.TextBox tbEstatura;
         private System.Windows.Forms.TextBox tbTelefono;
+        private System.Windows.Forms.TextBox tbEstatura;
+        private System.Windows.Forms.TextBox tbEdad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
